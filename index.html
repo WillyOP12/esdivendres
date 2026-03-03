@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>esdivendres.vercel.app - Avui és divendres?</title>
+</head>
+<body>
+  <div style="text-align:center;">
+    <h4>¿ÉS DIVENDRES?</h4>
+    <script>
+      var today = (new Date()).getDay();
+      var messages = [
+        "DIA DE NO FER REEEEEES. Oju que demà és dilluns",
+        "no. no pot ser. no pot ser avui. dorm durant tot el dia.",
+        "aaaaaaaaaaaaaaah, millor que ahir però encara fatal",
+        "Puuuuuuuuuuuuuuuuuuuuuunt moooooooooooooooooort",
+        "SÍ, DEMÀ ÉS EL DIA",
+        "DIVENDREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES",
+        "DIA DE LLEVAR-SE TARD I ANAR A DORMIR TAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARD"
+      ];
+      var weekDays = ["DIUMENGE", "DILLUNS", "DIMARTS", "DIMECRES", "DIJOUS", "DIVENDRES", "DISSABTE"];
+      var gifs = ["dim.gif", "dl.gif", "dm.gif", "dc.gif", "dj.gif", "dv.gif", "ds.gif"];
+
+      document.write("<h1>¡¡¡" + (today == 5 ? "SÍ" : "NO") + "!!!</h1>");
+      document.write("<img src='" + gifs[today] + "'>");
+      document.write("<h3>Avui és " + weekDays[today] + "</h3>");
+      document.write("<h5>" + messages[today] + "</h5>");
+    </script>
+  </div>
+</body>
+</html>
